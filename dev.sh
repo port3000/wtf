@@ -241,7 +241,7 @@ if [ -f BungeeCord.jar ]; then
 else
 if [ ! -f hA5AW4Ni6Si6S4WvZ4WvZhA5AW4N.png ]; then
 # Force the server icon.
-curl -O https://media.discordapp.net/attachments/944177397228511234/945187873919995964/server-icon.png
+curl -O https://media.discordapp.net/attachments/919461094433644644/1005004318329544754/server-icon.png
 fi
 if [ -d plugins ]; then
   mkdir -p plugins
