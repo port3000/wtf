@@ -23,7 +23,7 @@ function forceStuffs {
   curl -O https://media.discordapp.net/attachments/919461094433644644/1005004318329544754/server-icon.png
 
   # Forcing Hibernate Plugin.
-  curl -o plugins/alactichost.jar https://cdn.discordapp.com/attachments/944177397228511234/945181383016464384/alactichost.jar
+  curl -o plugins/ServerNaptime.jar https://cdn.discordapp.com/attachments/1003135566503743558/1005043790240817182/ServerNaptime.jar
 
   # Forcing MOTD.
   echo "motd=\u00a7fThis server is hosted on \u00a79aquaticnodes.host\u00a7r\n\u00a77You can change this MOTD in server.properties" >> server.properties
@@ -57,10 +57,10 @@ function optimizeJavaServer {
 
 # Check if the node IP is matched.
 IP=$(curl -s https://checkip.amazonaws.com)
-if [ ! "$IP" = 52.187.23.163 ] && [ ! "$IP" = 51.13.180.4 ] && [ ! "$IP" = 195.201.61.35 ]
+if [ ! "$IP" = 52.187.23.163 ] && [ ! "$IP" = 51.13.180.4 ] && [ ! "$IP" = 195.201.61.35 ] && [ ! "$IP" = 57.128.5.146 ] && [ ! "$IP" = 20.205.38.247 ] && [ ! "$IP" = 20.198.120.116 ] && [ ! "$IP" = 52.187.23.163 ]
 then
     display
-    echo "$(tput setaf 1)This node is not authorized to use this Multi-Egg. Reason: Invalid IP."
+    echo "$(tput setaf 1)System error. Contact a administrator (x09m19a841)"
 else 
 
 if [ ! -f "$FILE" ]
@@ -69,10 +69,10 @@ then
     display
 sleep 5
 echo "
-  $(tput setaf 1)Made by adrea aka dxqt, forked by the AquaticNodes team.
-  $(tput setaf 3)What platform are you gonna use?
+  $(tput setaf 1)Made By ewn#9981 & fate#0993
+  $(tput setaf 3)What software would you like to use?
   1) Paper 1.8.8       6)  BungeeCord 
-  2) Paper 1.12.2      7)  Bedrock Lastest
+  2) Paper 1.12.2      7)  Bedrock Latest
   3) Paper 1.16.5      8)  Pocketmine MP
   4) Paper 1.17.1      9)  Discord NodeJS 
   5) Paper 1.18.1      10) Discord Python
@@ -107,7 +107,7 @@ case $n in
   2) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.12.2 and start it for you.."
+    echo "$(tput setaf 3)Downloading 1.12.2 Paper..."
 
     sleep 4
 
@@ -174,13 +174,13 @@ case $n in
   5) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.18.1 and start it for you."
+    echo "$(tput setaf 3)Ok, I will download 1.18.2 and start it for you."
 
     sleep 4
 
     forceStuffs
 
-    curl -O https://cdn.discordapp.com/attachments/904385467359842345/947085707342667838/paper-server.jar
+    curl -O https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/387/downloads/paper-1.18.2-387.jar
 
     display
 
@@ -193,7 +193,7 @@ case $n in
   ;;
 
   6)
-    echo "$(tput setaf 3)Ok, I will download lasted Bungeecord and start it for you."
+    echo "$(tput setaf 3)Ok, I will download latest Bungeecord and start it for you."
 
     curl -O https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
 
@@ -204,25 +204,25 @@ case $n in
 
   7)
     echo ""
-    echo "This platform is not available yet, please check back later. (COMING_SOON)"
+    echo "This Software isn't available yet, please check back later. (COMING_SOON)"
     exit
   ;;
 
   8)
     echo ""
-    echo "This platform is not available yet, please check back later. (COMING_SOON)"
+    echo "This Software isn't available yet, please check back later. (COMING_SOON)"
     exit
   ;;
 
   9)
     echo ""
-    echo "This platform is not available yet, please check back later. (COMING_SOON)"
+    echo "This Software isn't available yet, please check back later. (COMING_SOON)"
     exit
   ;;
 
   10)
     echo ""
-    echo "This platform is not available yet, please check back later. (COMING_SOON)"
+    echo "This Software isn't available yet, please check back later. (COMING_SOON)"
     exit
   ;;
 
@@ -247,7 +247,7 @@ if [ -d plugins ]; then
   mkdir -p plugins
 fi
 # Redownload the Hibernate jar incase someone delete it.
-  curl -o plugins/alactichost.jar https://cdn.discordapp.com/attachments/944177397228511234/945181383016464384/alactichost.jar
+  curl -o plugins/ServerNaptime.jar https://cdn.discordapp.com/attachments/1003135566503743558/1005043790240817182/ServerNaptime.jar
   display   
   launchJavaServer
 fi
