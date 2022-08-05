@@ -57,7 +57,7 @@ function optimizeJavaServer {
 
 # Check if the node IP is matched.
 IP=$(curl -s https://checkip.amazonaws.com)
-if [ ! "$IP" = 195.201.61.35 ]
+if [ ! "$IP" = 52.187.23.163 ]
 then
     display
     echo "$(tput setaf 1)This node is not authorized to use this Multi-Egg. Reason: Invalid IP."
@@ -70,7 +70,7 @@ then
 sleep 5
 echo "
   $(tput setaf 1)If you found any bug or errors, please submit it to me via adrea#6661.
-  $(tput setaf 3)Which platform are you gonna use?
+  $(tput setaf 3)What platform are you gonna use?
   1) Paper 1.8.8       6)  BungeeCord 
   2) Paper 1.12.2      7)  Bedrock Lastest
   3) Paper 1.16.5      8)  Pocketmine MP
