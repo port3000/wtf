@@ -20,7 +20,7 @@ function display {
 
 function forceStuffs {
   # Forcing Default Server Icon.
-  curl -O https://media.discordapp.net/attachments/944177397228511234/945187873919995964/server-icon.png
+  curl -O https://media.discordapp.net/attachments/919461094433644644/1005004318329544754/server-icon.png
 
   # Forcing Hibernate Plugin.
   curl -o plugins/alactichost.jar https://cdn.discordapp.com/attachments/944177397228511234/945181383016464384/alactichost.jar
