@@ -153,7 +153,7 @@ case $n in
   4)
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.17.1 and start it for you."
+    echo "$(tput setaf 3)Ok, I will download 1.17.1 and start it for you.."
 
     sleep 4
 
