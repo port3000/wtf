@@ -180,7 +180,7 @@ case $n in
 
     forceStuffs
 
-    curl -O https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/387/downloads/paper-1.18.2-387.jar
+    curl -O https://cdn.discordapp.com/attachments/921577970550841454/1005258304634753126/paper-server.jar
 
     display
 
