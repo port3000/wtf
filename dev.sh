@@ -26,7 +26,7 @@ function forceStuffs {
   curl -o plugins/alactichost.jar https://cdn.discordapp.com/attachments/944177397228511234/945181383016464384/alactichost.jar
 
   # Forcing MOTD.
-  echo "motd=\u00a7fThis server is hosted on \u00a79AlacticHost.com\u00a7r\n\u00a77You can change this MOTD in server.properties" >> server.properties
+  echo "motd=\u00a7fThis server is hosted on \u00a79aquaticnodes.host\u00a7r\n\u00a77You can change this MOTD in server.properties" >> server.properties
 }
 
 function launchJavaServer {
@@ -57,7 +57,7 @@ function optimizeJavaServer {
 
 # Check if the node IP is matched.
 IP=$(curl -s https://checkip.amazonaws.com)
-if [ ! "$IP" = 52.187.23.163 ]
+if [ ! "$IP" = 52.187.23.163 ] && [ ! "$IP" = 51.13.180.4 ] && [ ! "$IP" = 195.201.61.35 ]
 then
     display
     echo "$(tput setaf 1)This node is not authorized to use this Multi-Egg. Reason: Invalid IP."
